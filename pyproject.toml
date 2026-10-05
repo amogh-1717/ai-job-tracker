@@ -1,0 +1,25 @@
+[project]
+name = "job-tracker"
+version = "0.1.0"
+description = "AI-powered job application tracker: Gmail -> Claude extraction -> Google Sheets"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.6",
+    "python-dotenv>=1.0",
+    "itsdangerous>=2.2",
+    "google-auth>=2.35",
+    "google-auth-oauthlib>=1.2",
+    "google-api-python-client>=2.149",
+    "gspread>=6.1",
+    "anthropic>=0.40",
+    "rapidfuzz>=3.10",
+]
+
+[dependency-groups]
+dev = []
+
+[tool.uv]
+package = false

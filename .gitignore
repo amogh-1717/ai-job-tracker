@@ -1,6 +1,21 @@
+# Secrets — never commit
 .env
 credentials.json
 token*.json
+client_secret*.json
+
+# Local runtime data (OAuth tokens, caches, labelled eval sets)
+data/
+
+# Python
 __pycache__/
-.venv/
 *.pyc
+.venv/
+*.egg-info/
+
+# Tooling / OS
+.pytest_cache/
+.ruff_cache/
+desktop.ini
+Thumbs.db
+.DS_Store
